@@ -428,7 +428,7 @@ const configFactory = configuration => {
       scope:
         'support.module.node,support.type.object.module,support.module.node',
       settings: {
-        foreground: colorObj.chalky
+        foreground: colorObj.coral
       }
     },
     {
