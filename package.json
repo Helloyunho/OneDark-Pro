@@ -3,7 +3,7 @@
     "displayName": "One Dark Pro",
     "description": "Atom's iconic One Dark theme for Visual Studio Code",
     "version": "3.7.1",
-    "publisher": "zhuangtongfa",
+    "publisher": "zhuangtongfa & Helloyunho",
     "bugs": {
         "url": "https://github.com/Binaryify/OneDark-Pro/issues"
     },
@@ -48,7 +48,7 @@
         "watch:ts": "yarn compile:ts -w",
         "vscode:prepublish": "yarn compile",
         "package": "vsce package",
-        "complete:sass":"npx sass --no-source-map scss:styles"
+        "complete:sass": "npx sass --no-source-map scss:styles"
     },
     "pre-commit": [],
     "prettier": {
@@ -56,8 +56,7 @@
         "semi": false
     },
     "contributes": {
-        "commands": [
-            {
+        "commands": [{
                 "command": "oneDarkPro.showChangelog",
                 "title": "%description.oneDarkPro.showChangelog%",
                 "category": "OneDark Pro"
@@ -93,13 +92,11 @@
                 "category": "OneDark Pro"
             }
         ],
-        "themes": [
-            {
-                "label": "One Dark Pro",
-                "uiTheme": "vs-dark",
-                "path": "./themes/OneDark-Pro.json"
-            }
-        ],
+        "themes": [{
+            "label": "One Dark Pro",
+            "uiTheme": "vs-dark",
+            "path": "./themes/OneDark-Pro.json"
+        }],
         "configuration": {
             "title": "One Dark Pro",
             "properties": {
